@@ -1,0 +1,13 @@
+{
+  "Common_App": "Kononchuk + ceramics",
+  "HomePage": {
+    "FirstParagraph": "Hello! My name is Semyon. I am \na programmer, but in my spare time I do ceramics: I make various ceramic items and experiment with glazes.",
+    "SecondParagraph": "You can buy something for yourself or as a gift by contacting me through social networks.",
+    "SegerBlock": {
+      "Title": "Helping the Ceramists",
+      "FirstParagraph": "«Seger» —  a notebook for ceramicists and potters who make their own glazes",
+      "SecondParagraph": "I took a direct part in the creation of Seger, thus combining the main directions of my activity: programming and ceramics.",
+      "Button": "Try seger.app ›"
+    }
+  }
+}
