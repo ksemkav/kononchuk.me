@@ -17,7 +17,7 @@ To deploy the application (builds and pushes to `gh-pages` branch):
     ```bash
     npm run deploy_me
     ```
-1. Deploy to `kononchuk.ru`
+1. Deploy to `kononchuk.ru`. Will be deployed via [kononchuk.ru repository](https://github.com/ksemkav/kononchuk.ru)
 
     ```bash
     npm run deploy_ru
