@@ -1,10 +1,12 @@
-import { FC, PropsWithChildren, useEffect, useState } from 'react';
+import { CSSProperties, FC, PropsWithChildren, useEffect, useState } from 'react';
 import backgroundPattern from '../../assets/pattern.svg';
 import './ResponsivePage.css';
 
-export type OwnProps = PropsWithChildren<{}>;
+export type OwnProps = PropsWithChildren<{
+  maxWidth?: CSSProperties['maxWidth'];
+}>;
 
-export const ResponsivePage: FC<OwnProps> = ({ children }) => {
+export const ResponsivePage: FC<OwnProps> = ({ children, maxWidth }) => {
   const [width, setWidth] = useState<number>(window.innerWidth);
 
   function handleWindowSizeChange() {
@@ -29,10 +31,12 @@ export const ResponsivePage: FC<OwnProps> = ({ children }) => {
         backgroundImage: `url(${backgroundPattern})`,
         backgroundSize: '250px',
         backgroundAttachment: 'fixed',
-        height: '100%',
+        minHeight: '100vh',
       }}
     >
-      <div className={'page-container'}>{children}</div>
+      <div className={'page-container'} style={{ maxWidth }}>
+        {children}
+      </div>
     </div>
   );
 };

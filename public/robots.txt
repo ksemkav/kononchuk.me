@@ -1,0 +1,63 @@
+User-agent: *
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: Googlebot
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: GPTBot
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: ChatGPT-User
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: ClaudeBot
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: anthropic-ai
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: Claude-Web
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: Google-Extended
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: PerplexityBot
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: CCBot
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: FacebookBot
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: meta-externalagent
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: Bytespider
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: Amazonbot
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: Applebot-Extended
+Disallow: /impressum
+Disallow: /datenschutz
+
+User-agent: cohere-ai
+Disallow: /impressum
+Disallow: /datenschutz

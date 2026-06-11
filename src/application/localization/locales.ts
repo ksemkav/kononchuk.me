@@ -1,9 +1,11 @@
 import { ru } from 'date-fns/locale';
 import { enUS } from 'date-fns/locale';
+import { de } from 'date-fns/locale';
 
 export enum Language {
   'ru' = 'ru',
   'en' = 'en',
+  'de' = 'de',
 }
 
 export type Namespace = 'translation';
@@ -13,6 +15,7 @@ export const dateLocales: {
 } = {
   ru: ru,
   en: enUS,
+  de: de,
   default: enUS,
 };
 

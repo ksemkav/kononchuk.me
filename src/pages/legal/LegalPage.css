@@ -1,0 +1,137 @@
+.legal-page {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ded5ce;
+}
+
+.legal-page-panel {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  color: #4b443d;
+}
+
+.legal-page-language-switcher {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.legal-page-panel-compact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 32px 72px;
+}
+
+.legal-page-panel-wide {
+  padding: 64px 54px 84px;
+}
+
+.legal-page-content-compact {
+  width: 100%;
+  max-width: 340px;
+}
+
+.legal-page h1,
+.legal-page h2,
+.legal-page h3 {
+  color: #4b443d;
+  line-height: 1.25;
+}
+
+.legal-page h1 {
+  margin: 0 0 28px;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 530;
+  letter-spacing: -0.03em;
+}
+
+.legal-page h2 {
+  margin: 44px 0 14px;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  font-weight: 530;
+}
+
+.legal-page h3 {
+  margin: 28px 0 10px;
+  font-size: 1.1rem;
+  font-weight: 530;
+}
+
+.legal-page p,
+.legal-page li {
+  overflow-wrap: anywhere;
+}
+
+.legal-page p {
+  margin: 0 0 16px;
+  line-height: 1.65;
+}
+
+.legal-page ul {
+  margin: 0 0 18px;
+  padding-left: 1.35rem;
+}
+
+.legal-page li {
+  margin: 0 0 8px;
+}
+
+.legal-page a {
+  color: #9f553f;
+  font-weight: 500;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.legal-page a:hover,
+.legal-page a:focus-visible {
+  color: #c1694d;
+}
+
+.legal-page .index {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr;
+  margin: 22px 0 36px;
+  padding: 22px;
+  list-style: none;
+  background: rgba(75, 68, 61, 0.06);
+  border-radius: 16px;
+}
+
+.legal-page .index li {
+  margin: 0;
+}
+
+.legal-page .index-link {
+  text-decoration: none;
+}
+
+.legal-page .m-elements,
+.legal-page .glossary {
+  padding-left: 1.1rem;
+}
+
+.legal-page-contact-line {
+  margin-bottom: 4px !important;
+}
+
+@media (max-width: 640px) {
+  .legal-page-panel-compact,
+  .legal-page-panel-wide {
+    padding: 40px 22px 56px;
+  }
+
+  .legal-page-language-switcher {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+  }
+}

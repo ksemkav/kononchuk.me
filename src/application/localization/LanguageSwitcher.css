@@ -1,0 +1,48 @@
+.language-switcher {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.language-switcher-button {
+  appearance: none;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  cursor: pointer;
+  opacity: 0.72;
+}
+
+.language-switcher-button:hover,
+.language-switcher-button:focus-visible,
+.language-switcher-button-active {
+  opacity: 1;
+}
+
+.language-switcher-button-active {
+  opacity: 1;
+}
+
+.language-switcher-light {
+  color: #4b443d;
+}
+
+.language-switcher-light .language-switcher-button-active {
+  background: #4b443d;
+  color: #ded5ce;
+}
+
+.language-switcher-dark {
+  color: #ded5ce;
+}
+
+.language-switcher-dark .language-switcher-button-active {
+  background: #ded5ce;
+  color: #4b443d;
+}
