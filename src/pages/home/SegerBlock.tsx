@@ -12,35 +12,35 @@ export const SegerBlock: FC<OwnProps> = ({ handleSegerClick }) => {
   const { t } = useTranslation();
   return (
     <Stack className={'home-container'} spacing={2} direction={'column'}>
-      <Grid container justifyContent={'center'}>
+      <Grid container sx={{ justifyContent: 'center' }}>
         <Grid size={{ sm: 1, xs: 1 }} />
         <Grid size={{ sm: 10, xs: 10 }} className={'home-title'}>
           {t('HomePage.SegerBlock.Title')}
         </Grid>
         <Grid size={{ sm: 1, xs: 1 }} />
       </Grid>
-      <Grid container justifyContent={'center'}>
+      <Grid container sx={{ justifyContent: 'center' }}>
         <Grid size={{ sm: 1, xs: 1 }} />
         <Grid size={{ sm: 10, xs: 10 }} className={'home-text'}>
           {t('HomePage.SegerBlock.FirstParagraph')}
         </Grid>
         <Grid size={{ sm: 1, xs: 1 }} />
       </Grid>
-      <Grid container justifyContent={'center'}>
+      <Grid container sx={{ justifyContent: 'center' }}>
         <Grid size={{ sm: 1, xs: 1 }} />
         <Grid size={{ sm: 10, xs: 10 }}>
           <SegerImage className={'home-seger-image'} />
         </Grid>
         <Grid size={{ sm: 1, xs: 1 }} />
       </Grid>
-      <Grid container justifyContent={'center'}>
+      <Grid container sx={{ justifyContent: 'center' }}>
         <Grid size={{ sm: 1, xs: 1 }} />
         <Grid size={{ sm: 10, xs: 10 }} className={'home-text'}>
           {t('HomePage.SegerBlock.SecondParagraph')}
         </Grid>
         <Grid size={{ sm: 1, xs: 1 }} />
       </Grid>
-      <Grid className={'home-seger-link'} container justifyContent={'center'}>
+      <Grid className={'home-seger-link'} container sx={{ justifyContent: 'center' }}>
         <Grid size={{ sm: 1, xs: 1 }} />
         <Grid
           size={{ sm: 10, xs: 10 }}

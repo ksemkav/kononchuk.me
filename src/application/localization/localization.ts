@@ -20,7 +20,7 @@ export function initializeLocalization() {
         preload: [fallbackLng],
         //saveMissing: process.env.NODE_ENV !== 'production',
         lowerCaseLng: true,
-        initImmediate: true,
+        initAsync: true,
         debug: false,
         supportedLngs: languages,
         interpolation: {

@@ -51,7 +51,7 @@ export const Home: FC = () => {
 
   return (
     <div className={'home-container'}>
-      <Stack direction={'column'} spacing={6} alignItems={'center'}>
+      <Stack direction={'column'} spacing={6} sx={{ alignItems: 'center' }}>
         <HeaderLogoBlock
           handleTelegramClick={handleTelegramClick}
           handleInstagramClick={handleInstagramClick}

@@ -15,7 +15,7 @@ type OwnProps = {
 export const FooterBlock: FC<OwnProps> = ({ handleInstagramClick, handleTelegramClick, handleEmailClick }) => {
   const { t } = useTranslation();
   return (
-    <Stack direction={'column'} className={'home-footer'} justifyContent={'center'} alignItems={'center'} spacing={3}>
+    <Stack direction={'column'} className={'home-footer'} sx={{ justifyContent: 'center', alignItems: 'center' }} spacing={3}>
       <Stack direction={'row'} spacing={1.5}>
         <ButtonBase className={'footer-social-icon'} centerRipple onClick={handleInstagramClick}>
           <InstIconFooter />

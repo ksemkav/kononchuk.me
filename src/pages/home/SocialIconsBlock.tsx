@@ -13,9 +13,9 @@ type OwnProps = {
 
 export const SocialIconsBlock: FC<OwnProps> = ({ handleInstagramClick, handleTelegramClick, handleEmailClick }) => {
   return (
-    <Stack direction={'row'} alignItems={'center'} justifyContent={'space-between'} className={'home-social-row'}>
+    <Stack direction={'row'} sx={{ alignItems: 'center', justifyContent: 'space-between' }} className={'home-social-row'}>
       <img className={'home-subheader-logo'} src={homeSubheader} />
-      <Stack direction={'row'} justifyContent={'end'} alignItems={'center'} spacing={2}>
+      <Stack direction={'row'} sx={{ justifyContent: 'end', alignItems: 'center' }} spacing={2}>
         <ButtonBase className={'home-social-icon'} centerRipple onClick={handleInstagramClick}>
           <InstIcon />
         </ButtonBase>

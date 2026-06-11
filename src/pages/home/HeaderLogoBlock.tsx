@@ -12,7 +12,7 @@ type OwnProps = {
 
 export const HeaderLogoBlock: FC<OwnProps> = ({ handleInstagramClick, handleTelegramClick, handleEmailClick }) => {
   return (
-    <Stack className={'home-header'} alignItems={'center'}>
+    <Stack className={'home-header'} sx={{ alignItems: 'center' }}>
       <img className={'home-background-image'} src={BackgroundImage} />
       <img className={'home-logo'} src={homeLogo} />
       <SocialIconsBlock
