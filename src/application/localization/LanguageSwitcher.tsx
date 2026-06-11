@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import clsx from 'clsx';
@@ -24,15 +25,16 @@ export const LanguageSwitcher: FC<OwnProps> = ({ variant = 'light' }) => {
         const isActive = currentLanguage === language;
 
         return (
-          <button
+          <Button
             key={language}
             type={'button'}
+            variant={'outlined'}
             className={clsx('language-switcher-button', isActive && 'language-switcher-button-active')}
             aria-pressed={isActive}
             onClick={() => changeLanguage(language)}
           >
             {label}
-          </button>
+          </Button>
         );
       })}
     </div>

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, MouseEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Language } from '../../application/localization/locales';
 import { LegalPage } from '../legal/LegalPage';
@@ -22,10 +22,24 @@ export const Datenschutz: FC = () => {
   return (
     <LegalPage variant={'wide'}>
       <h1>{t('DatenschutzPage.Title')}</h1>
-      {html ? <div dangerouslySetInnerHTML={{ __html: html }} /> : <p>{t('DatenschutzPage.LoadError')}</p>}
+      {html ? (
+        <div onClick={handleContentClick} dangerouslySetInnerHTML={{ __html: html }} />
+      ) : (
+        <p>{t('DatenschutzPage.LoadError')}</p>
+      )}
     </LegalPage>
   );
 };
+
+function handleContentClick(event: MouseEvent<HTMLDivElement>) {
+  const link = (event.target as HTMLElement).closest('a[href^="#"]');
+  const sectionId = link?.getAttribute('href')?.substring(1);
+
+  if (!sectionId) return;
+
+  event.preventDefault();
+  document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 function getContentLanguage(language: string): Language {
   const twoLetters = language.substring(0, 2);

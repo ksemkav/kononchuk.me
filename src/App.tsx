@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { LanguageProvider } from './application/localization/LanguageProvider';
 import { Datenschutz } from './pages/datenschutz/Datenschutz';
 import { Home } from './pages/home/Home';
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           {!isRuDomain && (
             <>
@@ -42,7 +42,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </LanguageProvider>
   );
 }
