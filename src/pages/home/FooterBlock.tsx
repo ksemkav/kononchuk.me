@@ -4,26 +4,20 @@ import { useTranslation } from 'react-i18next';
 import InstIconFooter from '../../assets/home/inst_footer_icon.svg?react';
 import TelegramIconFooter from '../../assets/home/tg_footer_icon.svg?react';
 import EmailIconFooter from '../../assets/home/email_footer_icon.svg?react';
-import { EMAIL } from '../../application/constants';
+import { EMAIL, INSTAGRAM_LINK, TELEGRAM_LINK } from '../../application/constants';
 
-type OwnProps = {
-  handleInstagramClick: () => void;
-  handleTelegramClick: () => void;
-  handleEmailClick: () => void;
-};
-
-export const FooterBlock: FC<OwnProps> = ({ handleInstagramClick, handleTelegramClick, handleEmailClick }) => {
+export const FooterBlock: FC = () => {
   const { t } = useTranslation();
   return (
     <Stack direction={'column'} className={'home-footer'} sx={{ justifyContent: 'center', alignItems: 'center' }} spacing={3}>
       <Stack direction={'row'} spacing={1.5}>
-        <ButtonBase className={'footer-social-icon'} centerRipple onClick={handleInstagramClick}>
+        <ButtonBase component={'a'} href={INSTAGRAM_LINK} aria-label={'Instagram'} className={'footer-social-icon'} centerRipple>
           <InstIconFooter />
         </ButtonBase>
-        <ButtonBase className={'footer-social-icon'} centerRipple onClick={handleTelegramClick}>
+        <ButtonBase component={'a'} href={TELEGRAM_LINK} aria-label={'Telegram'} className={'footer-social-icon'} centerRipple>
           <TelegramIconFooter />
         </ButtonBase>
-        <ButtonBase className={'footer-social-icon'} centerRipple onClick={handleEmailClick}>
+        <ButtonBase component={'a'} href={`mailto:${EMAIL}`} aria-label={'Email'} className={'footer-social-icon'} centerRipple>
           <EmailIconFooter />
         </ButtonBase>
       </Stack>

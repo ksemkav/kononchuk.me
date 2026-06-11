@@ -4,22 +4,12 @@ import homeLogo from '../../assets/home/home_logo.svg';
 import BackgroundImage from '../../assets/home/header_background.png';
 import { SocialIconsBlock } from './SocialIconsBlock';
 
-type OwnProps = {
-  handleInstagramClick: () => void;
-  handleTelegramClick: () => void;
-  handleEmailClick: () => void;
-};
-
-export const HeaderLogoBlock: FC<OwnProps> = ({ handleInstagramClick, handleTelegramClick, handleEmailClick }) => {
+export const HeaderLogoBlock: FC = () => {
   return (
     <Stack className={'home-header'} sx={{ alignItems: 'center' }}>
       <img className={'home-background-image'} src={BackgroundImage} />
       <img className={'home-logo'} src={homeLogo} />
-      <SocialIconsBlock
-        handleTelegramClick={handleTelegramClick}
-        handleInstagramClick={handleInstagramClick}
-        handleEmailClick={handleEmailClick}
-      />
+      <SocialIconsBlock />
     </Stack>
   );
 };

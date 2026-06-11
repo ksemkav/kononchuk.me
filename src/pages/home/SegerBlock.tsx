@@ -3,12 +3,9 @@ import clsx from 'clsx';
 import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import SegerImage from '../../assets/home/seger.svg?react';
+import { SEGER_LINK } from '../../application/constants';
 
-type OwnProps = {
-  handleSegerClick: () => void;
-};
-
-export const SegerBlock: FC<OwnProps> = ({ handleSegerClick }) => {
+export const SegerBlock: FC = () => {
   const { t } = useTranslation();
   return (
     <Stack className={'home-container'} spacing={2} direction={'column'}>
@@ -43,9 +40,10 @@ export const SegerBlock: FC<OwnProps> = ({ handleSegerClick }) => {
       <Grid className={'home-seger-link'} container sx={{ justifyContent: 'center' }}>
         <Grid size={{ sm: 1, xs: 1 }} />
         <Grid
+          component={'a'}
+          href={SEGER_LINK}
           size={{ sm: 10, xs: 10 }}
           className={clsx('home-subtitle', 'home-title-clickable')}
-          onClick={handleSegerClick}
         >
           {t('HomePage.SegerBlock.Button')}
         </Grid>

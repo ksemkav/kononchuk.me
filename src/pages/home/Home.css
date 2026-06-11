@@ -37,6 +37,14 @@
 
 .home-title-clickable {
   cursor: pointer;
+  text-decoration: none;
+}
+
+.home-title-clickable:visited,
+.home-title-clickable:hover,
+.home-title-clickable:active {
+  color: #c1694d;
+  text-decoration: none;
 }
 
 .home-intro-text {
@@ -77,12 +85,30 @@
   width: 55px;
   height: 55px;
   margin: 0 5px 0 5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-social-icon:visited,
+.home-social-icon:hover,
+.home-social-icon:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 .footer-social-icon {
   width: 65px;
   height: 65px;
   margin: 0 5px 0 5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-social-icon:visited,
+.footer-social-icon:hover,
+.footer-social-icon:active {
+  color: inherit;
+  text-decoration: none;
 }
 
 .home-footer {
