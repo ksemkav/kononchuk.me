@@ -9,5 +9,19 @@
       "SecondParagraph": "I took a direct part in the creation of Seger, thus combining the main directions of my activity: programming and ceramics.",
       "Button": "Try seger.app ›"
     }
+  },
+  "ImpressumPage": {
+    "Title": "Imprint",
+    "ContactTitle": "Contact",
+    "PhoneLabel": "Phone",
+    "EmailLabel": "Email"
+  },
+  "DatenschutzPage": {
+    "Title": "Privacy Policy",
+    "LoadError": "The privacy policy could not be loaded."
+  },
+  "Footer": {
+    "Impressum": "Imprint",
+    "Datenschutz": "Privacy Policy"
   }
 }
