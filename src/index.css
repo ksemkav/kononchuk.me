@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Jost Variable', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -31,7 +31,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Jost Variable', sans-serif;
 }
 
 h1 {
